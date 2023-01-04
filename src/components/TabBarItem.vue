@@ -10,7 +10,10 @@
   export default {
     name: "TabBarItem",
     props:{
-      path:String,
+      path:{
+        type:String,
+        default: '/profile'
+      },
       isColor:{
         type:String,
         default:'palevioletred'

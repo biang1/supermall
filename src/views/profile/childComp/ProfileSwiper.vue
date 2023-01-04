@@ -9,15 +9,15 @@
 </template>
 
 <script>
-	import {Swiper, SwiperItem} from 'components/common/swiper/index';
+	import {Swiper, SwiperItem} from '@/components/swiper/index';
 	export default {
-		name: 'HomeSwiper',
+		name: 'ProfileSwiper',
 		props: {
 			banners: {
 				type: Array,
 				default() {
 					return []
-				} 
+				}
 			}
 		},
 		data(){
@@ -27,7 +27,7 @@
 		},
 		components: {
 			Swiper,
-			SwiperItem 
+			SwiperItem
 		},
 		methods: {
 			imgLoad(){

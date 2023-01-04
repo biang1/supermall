@@ -9,18 +9,16 @@ export function getDetail(iid){
 		}
 	})
 }
-
 //请求推荐recommend
 export function getRecommend(){
 	return request({
 		url:'/recommend'
 	})
 }
-
 //商品基本信息
-export class Goods {
-	constructor(itemInfo, columns, shopInfo) {
-	    this.title = itemInfo.title;
+export class Goods{
+	constructor(itemInfo,columns,shopInfo){
+		this.title = itemInfo.title;
 		this.price = itemInfo.price;
 		this.oldPrice = itemInfo.oldPrice;
 		this.lowNowPrice = itemInfo.lowNowPrice;
@@ -31,9 +29,9 @@ export class Goods {
 }
 
 //商铺信息
-export class Shop {
+export class Shop{
 	constructor(shopInfo) {
-	    this.shopLogo = shopInfo.shopLogo;
+		this.shopLogo = shopInfo.shopLogo;
 		this.name = shopInfo.name;
 		this.score = shopInfo.score;
 		this.cSells = shopInfo.cSells;
@@ -41,12 +39,10 @@ export class Shop {
 	}
 }
 
-//参数信息
-export class Param {
+//尺寸信息
+export class SizeInfo{
 	constructor(info, rule) {
-	    this.info = info.set;
+		this.info = info.set;
 		this.rule = rule.tables;
 	}
 }
-
-

@@ -19,14 +19,14 @@
 					<img :src="item" alt="">
 				</div>
 			</div>
-			
+
 		</div>
-		
+
 	</div>
 </template>
 
 <script>
-	import {formatDate} from '../../../common/untils.js'
+	import {formatDate} from '@/common/until'
 	export default {
 		name: 'DetailCommentInfo',
 		props: {
@@ -48,43 +48,45 @@
 	}
 </script>
 
-<style lang="less" scoped>
+<style  scoped>
+	.flex{
+		display: flex;
+	}
 	.comment-info-wrap {
 		padding: 0 8px;
 		font-size: 14px;
 		border-bottom: 4px solid #ececec;
-		.comment-title {
-			justify-content: space-between;
-			border-bottom: 1px solid #ececec;
-			padding: 10px 4px;
-		}
-		.comment-user-info {
-			padding: 10px 0;
-			.avatar {
-				width: 40px;
-				height: 40px;
-				border-radius: 100%;
-				margin-right: 10px;
-				vertical-align: middle;
-			}
-		}
-		.comment-text {
-			line-height: 20px;
-		}
-		.comment-goods-info {
-			color: #999;
-			margin: 4px 0;
-			.comment-time {
-				margin-right: 10px;
-			}
-		}
-		.comment-info-images {
-			img{
-				width: 60px;
-				height: 60px;
-				margin-right: 6px;
-			}
-		}
 	}
-	
+	.comment-title {
+		justify-content: space-between;
+		border-bottom: 1px solid #ececec;
+		padding: 10px 4px;
+	}
+	.comment-user-info {
+		padding: 10px 0;
+	}
+	.avatar {
+		width: 40px;
+		height: 40px;
+		border-radius: 100%;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+	.comment-text {
+		line-height: 20px;
+	}
+	.comment-goods-info {
+		color: #999;
+		margin: 4px 0;
+	}
+	.comment-time {
+		margin-right: 10px;
+	}
+	.comment-info-images img {
+		width: 60px;
+		height: 60px;
+		margin-right: 6px;
+
+	}
+
 </style>
